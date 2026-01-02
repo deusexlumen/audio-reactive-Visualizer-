@@ -1,0 +1,46 @@
+import { Theme, VisualizerStyle, VisualizerStyleInfo } from './types';
+import { BarsIcon, CircleIcon, WaveIcon, NeonTunnelIcon, ParticlesIcon, GridIcon, RadialBarsIcon, FlowerIcon, SpiralIcon, CosmicPulseIcon, RetroSunIcon, EqualizerIcon, SpiroIcon, RainIcon, AuroraIcon, StarfieldIcon, KaleidoscopeIcon, BlobIcon, CubicIcon, VortexIcon, StringTheoryIcon, GalaxyIcon, PlasmaIcon, MetropolisIcon, DNAHelixIcon, SunburstIcon, GlitchIcon, GearIcon } from './components/styleIcons';
+
+export const VISUALIZER_STYLES: VisualizerStyleInfo[] = [
+  { id: VisualizerStyle.BARS, name: 'Bars', icon: BarsIcon },
+  { id: VisualizerStyle.WAVE, name: 'Wave', icon: WaveIcon },
+  { id: VisualizerStyle.CIRCLE, name: 'Circle', icon: CircleIcon },
+  { id: VisualizerStyle.NEON_TUNNEL, name: 'Tunnel', icon: NeonTunnelIcon },
+  { id: VisualizerStyle.PARTICLES, name: 'Particles', icon: ParticlesIcon },
+  { id: VisualizerStyle.GRID, name: 'Grid', icon: GridIcon },
+  { id: VisualizerStyle.RADIAL_BARS, name: 'Radial', icon: RadialBarsIcon },
+  { id: VisualizerStyle.FLOWER, name: 'Flower', icon: FlowerIcon },
+  { id: VisualizerStyle.SPIRAL, name: 'Spiral', icon: SpiralIcon },
+  { id: VisualizerStyle.SUNBURST, name: 'Sunburst', icon: SunburstIcon },
+  { id: VisualizerStyle.COSMIC_PULSE, name: 'Pulse', icon: CosmicPulseIcon },
+  { id: VisualizerStyle.METROPOLIS, name: 'Metropolis', icon: MetropolisIcon },
+  { id: VisualizerStyle.RETRO_SUN, name: 'Retro Sun', icon: RetroSunIcon },
+  { id: VisualizerStyle.EQUALIZER, name: 'Equalizer', icon: EqualizerIcon },
+  { id: VisualizerStyle.DNA_HELIX, name: 'DNA Helix', icon: DNAHelixIcon },
+  { id: VisualizerStyle.SPIRO, name: 'Spiro', icon: SpiroIcon },
+  { id: VisualizerStyle.RAIN, name: 'Rain', icon: RainIcon },
+  { id: VisualizerStyle.AURORA, name: 'Aurora', icon: AuroraIcon },
+  { id: VisualizerStyle.STARFIELD, name: 'Starfield', icon: StarfieldIcon },
+  { id: VisualizerStyle.KALEIDOSCOPE, name: 'Kaleido', icon: KaleidoscopeIcon },
+  { id: VisualizerStyle.BLOB, name: 'Blob', icon: BlobIcon },
+  { id: VisualizerStyle.CUBIC, name: 'Cubic', icon: CubicIcon },
+  { id: VisualizerStyle.VORTEX, name: 'Vortex', icon: VortexIcon },
+  { id: VisualizerStyle.GLITCH, name: 'Glitch', icon: GlitchIcon },
+  { id: VisualizerStyle.STRING_THEORY, name: 'Strings', icon: StringTheoryIcon },
+  { id: VisualizerStyle.GALAXY, name: 'Galaxy', icon: GalaxyIcon },
+  { id: VisualizerStyle.PLASMA, name: 'Plasma', icon: PlasmaIcon },
+  { id: VisualizerStyle.CUSTOM, name: 'Custom', icon: GearIcon },
+];
+
+export const THEMES: Theme[] = [
+  { id: '1', name: 'Neon Reaper', primaryColor: '#FF0000', secondaryColor: '#4B0000', sensitivity: 1.5, lineWidth: 2.5, backgroundFade: 0.1, glowIntensity: 20 },
+  { id: '2', name: 'Synthwave', primaryColor: '#FF00FF', secondaryColor: '#00FFFF', sensitivity: 1.3, lineWidth: 1.5, backgroundFade: 0.1, glowIntensity: 15 },
+  { id: '3', name: 'Solar Flare', primaryColor: '#FF4500', secondaryColor: '#FFD700', sensitivity: 2.2, lineWidth: 4, backgroundFade: 0.05, glowIntensity: 20 },
+  { id: '4', name: 'Blueprint', primaryColor: '#00FFFF', secondaryColor: '#00008B', sensitivity: 0.7, lineWidth: 1, backgroundFade: 0.05, glowIntensity: 0 },
+  { id: '5', name: 'Aurora', primaryColor: '#7CFC00', secondaryColor: '#00FFFF', sensitivity: 1.3, lineWidth: 2, backgroundFade: 0.1, glowIntensity: 16 },
+  { id: '6', name: 'Deep Sea', primaryColor: '#000080', secondaryColor: '#1E90FF', sensitivity: 0.7, lineWidth: 2, backgroundFade: 0.35, glowIntensity: 4 },
+  { id: '7', name: 'Lifestream', primaryColor: '#00FF7F', secondaryColor: '#3CB371', sensitivity: 1.4, lineWidth: 4, backgroundFade: 0.15, glowIntensity: 12 },
+  { id: '8', name: 'Monochrome', primaryColor: '#FFFFFF', secondaryColor: '#808080', sensitivity: 0.9, lineWidth: 1, backgroundFade: 0.1, glowIntensity: 2 },
+  { id: '9', name: 'Golden', primaryColor: '#FFD700', secondaryColor: '#B8860B', sensitivity: 1.2, lineWidth: 2.5, backgroundFade: 0.1, glowIntensity: 13 },
+  { id: '10', name: 'Psychonaut', primaryColor: '#DA70D6', secondaryColor: '#4B0082', sensitivity: 2.0, lineWidth: 2, backgroundFade: 0.25, glowIntensity: 10 },
+];

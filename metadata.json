@@ -1,0 +1,7 @@
+{
+  "name": "Audio Reactive Visualizer",
+  "description": "An interactive audio visualizer that reacts to your microphone input or uploaded music files. Choose from a variety of stunning visual presets.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

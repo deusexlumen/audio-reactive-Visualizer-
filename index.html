@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Reactive Visualizer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #111827; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #374151; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #4B5563; 
+      }
+
+      /* Custom Range Slider */
+      input[type=range] {
+        -webkit-appearance: none;
+        width: 100%;
+        background: transparent;
+        height: 24px;
+        cursor: pointer;
+      }
+      
+      input[type=range]:focus {
+        outline: none;
+      }
+
+      /* Slider Track */
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 6px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: #374151;
+        border-radius: 3px;
+      }
+      input[type=range]::-moz-range-track {
+        width: 100%;
+        height: 6px;
+        cursor: pointer;
+        animate: 0.2s;
+        background: #374151;
+        border-radius: 3px;
+      }
+
+      /* Slider Thumb */
+      input[type=range]::-webkit-slider-thumb {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #22d3ee; /* Cyan-400 */
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -5px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+        box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+        transition: transform 0.1s ease;
+      }
+      input[type=range]::-webkit-slider-thumb:hover {
+        transform: scale(1.2);
+        background: #67e8f9;
+      }
+      
+      input[type=range]::-moz-range-thumb {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #22d3ee;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+        transition: transform 0.1s ease;
+      }
+      input[type=range]::-moz-range-thumb:hover {
+        transform: scale(1.2);
+        background: #67e8f9;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-950 text-gray-100 selection:bg-cyan-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
